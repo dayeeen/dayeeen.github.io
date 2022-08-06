@@ -8,14 +8,18 @@
 }
 body {
 	background-color: rgb(255, 0, 149);
+	background-image: url('https://wallpapercave.com/wp/VM5TgKU.jpg');
+	background-size: cover;
+	text-align: center;
 }
 header {
 	font-family: 'syn-fonts', arial;
 	font-size: 20px;
+	text-align: center;
+	color: rgb(0, 255, 55);
 }
 main {
 	color: blue;
-	background-color: rgb(148, 26, 26);
 }
 footer {
 	background-color: #fff;
