@@ -1,1 +1,0 @@
-alert("Anjime, gwej hacker!");
