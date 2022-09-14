@@ -1,27 +1,48 @@
-@font-face {
-	font-family: 'syn-fonts';
-	src: url('assets/fonts/syn.ttf') format('truetype');		 
+.navbar {
+  background-color: #0c0c0c;
 }
-* {
-	box-sizing: border-box;
-	margin: 0;
+.nav-item {
+  padding-right: 100px;
 }
-body {
-	background-color: rgb(255, 0, 149);
-	background-image: url('https://wallpapercave.com/wp/VM5TgKU.jpg');
-	background-size: cover;
-	text-align: center;
+.bg-image {
+  background-image: url("/img/wallpaper.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 80px;
 }
-header {
-	font-family: 'syn-fonts', arial;
-	font-size: 20px;
-	text-align: center;
-	color: rgb(0, 255, 55);
+.black-part {
+  padding-top: 70px;
+  background-color: #0c0c0c;
+  color: #fff;
 }
-main {
-	color: blue;
+.white-part {
+  padding-top: 120px;
+  background-color: #fff;
+  color: #0c0c0c;
 }
+.img-thumbnail {
+  background-color: #0c0c0c;
+}
+.social-icon {
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #0c0c0c;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+}
+.card {
+  color: #0c0c0c;
+}
+
 footer {
-	background-color: #fff;
-	color: rgb(255, 0, 0);
+  background-color: #0c0c0c;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
