@@ -39,7 +39,9 @@
 .card {
   color: #0c0c0c;
 }
-
+.carousel-item {
+  height: 600px;
+}
 footer {
   background-color: #0c0c0c;
   color: #fff;
