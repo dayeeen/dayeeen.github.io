@@ -39,8 +39,21 @@
 .card {
   color: #0c0c0c;
 }
+.card-body {
+  background-color: #fff;
+}
+.card-text {
+  text-align: justify;
+  align-items: center;
+  justify-content: center;
+  font-size: auto;
+}
 .carousel-item {
   height: 600px;
+}
+.btn-primary {
+  background-color: #0c0c0c;
+  border-color: #0c0c0c;
 }
 footer {
   background-color: #0c0c0c;
