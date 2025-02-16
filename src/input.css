@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+
+.navbar {
+  background-color: #0c0c0c;
+}
+.nav-item {
+  padding-right: 100px;
+}
+.bg-image {
+  background-image: url("assets/img/wallpaper.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 80px;
+}
+.black-part {
+  padding-top: 70px;
+  background-color: #0c0c0c;
+  color: #fff;
+}
+.white-part {
+  padding-top: 120px;
+  background-color: #fff;
+  color: #0c0c0c;
+}
+.img-thumbnail {
+  background-color: #0c0c0c;
+}
+.social-icon {
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #0c0c0c;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+}
+.card {
+  color: #0c0c0c;
+}
+.card-body {
+  background-color: #fff;
+}
+.card-text {
+  text-align: justify;
+  align-items: center;
+  justify-content: center;
+  font-size: auto;
+}
+.carousel-item {
+  height: 600px;
+}
+.btn-primary {
+  background-color: #0c0c0c;
+  border-color: #0c0c0c;
+}
+footer {
+  background-color: #0c0c0c;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
