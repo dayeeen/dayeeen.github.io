@@ -13,6 +13,10 @@
     --text-tiny--letter-spacing: 0.125rem; 
     --text-tiny--font-weight: 500; 
 
+    /* Color */
+    --color-primary-black: #0B090C;
+    --color-primary-white: #FFFFFF;
+    --color-primary-yellow: #F1FF2E;
     
 }
   
