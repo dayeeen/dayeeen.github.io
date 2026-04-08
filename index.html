@@ -9,213 +9,425 @@
   <link href="./output.css" rel="stylesheet">
 </head>
 
-<body class="font-poppins bg-primary-black">
+<body class="font-poppins bg-bg-neo text-black overflow-x-hidden">
   <!-- Navbar -->
-  <header class="sticky top-0 z-10 bg-primary-black">
-    <div class="navbar shadow-sm px-10">
+  <header
+    class="sticky top-0 z-50 bg-bg-neo/90 backdrop-blur-sm border-b-[4px] border-black shadow-[0px_4px_0px_0px_rgba(0,0,0,1)]">
+    <div class="navbar px-10 py-3">
       <div class="navbar-start">
         <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden border-2 border-black rounded-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-black" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h8m-8 6h16" />
             </svg>
           </div>
-          <ul tabindex="0" class="menu menu-sm dropdown-content bg-primary-black rounded-box z-1 mt-3 w-52 p-2 shadow">
-            <li><a href="#">Home</a></li>
-            <li><a href="#service">Service</a></li>
-            <li><a href="#project">Project</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <ul tabindex="0"
+            class="menu menu-sm dropdown-content bg-white neo-border shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rounded-xl z-50 mt-3 w-52 p-2 font-bold text-lg">
+            <li><a href="#" class="hover:bg-primary-yellow focus:bg-primary-yellow focus:text-black">Home</a></li>
+            <li><a href="#service" class="hover:bg-primary-yellow focus:bg-primary-yellow focus:text-black">Service</a>
+            </li>
+            <li><a href="#project" class="hover:bg-primary-yellow focus:bg-primary-yellow focus:text-black">Project</a>
+            </li>
+            <li><a href="#contact" class="hover:bg-primary-yellow focus:bg-primary-yellow focus:text-black">Contact</a>
+            </li>
+            <div class="divider my-1 border-black"></div>
+            <li><a
+                class="bg-neo-pink text-white neo-border-3 text-center justify-center hover:bg-primary-yellow hover:text-black focus:bg-primary-yellow focus:text-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-y-px">Download
+                CV</a></li>
           </ul>
         </div>
-        <!-- sesuaikan ukuran gambarnya -->
-        <div class="w-[120px]">
-          <img src="assets/img/logo.png" alt="Logo" srcset="">
+        <div class="font-black text-2xl tracking-tighter flex items-center gap-2 cursor-pointer ml-4 lg:ml-0">
+          <div
+            class="w-8 h-8 bg-neo-blue neo-border-3 rounded-full flex items-center justify-center shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] overflow-hidden">
+            <img src="assets/img/logo.png" alt="Logo" class="w-full h-full object-cover">
+          </div>
+          dayen
         </div>
       </div>
       <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1 text-lg">
-          <li><a href="#">Home</a></li>
-          <li><a href="#service">Service</a></li>
-          <li><a href="#project">Project</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="menu menu-horizontal px-1 text-lg font-bold">
+          <li><a href="#"
+              class="hover:bg-transparent hover:text-neo-pink hover:underline decoration-4 underline-offset-4">Home</a>
+          </li>
+          <li><a href="#service"
+              class="hover:bg-transparent hover:text-neo-pink hover:underline decoration-4 underline-offset-4">Service</a>
+          </li>
+          <li><a href="#project"
+              class="hover:bg-transparent hover:text-neo-pink hover:underline decoration-4 underline-offset-4">Project</a>
+          </li>
+          <li><a href="#contact"
+              class="hover:bg-transparent hover:text-neo-pink hover:underline decoration-4 underline-offset-4">Contact</a>
+          </li>
         </ul>
       </div>
       <div class="navbar-end">
-        <a class="btn rounded-xl bg-primary-yellow text-black font-bold">Download CV</a>
+        <a class="neo-btn bg-white px-6 py-2 hover:bg-primary-yellow text-center text-sm lg:text-base hidden lg:flex">Download
+          CV</a>
       </div>
     </div>
   </header>
 
   <!-- Main Content -->
-  <main class="px-[75px] py-10">
+  <main class="px-6 lg:px-[75px] py-10 relative">
+    <!-- Decorative element -->
+    <div
+      class="absolute top-10 right-[15%] w-16 h-16 bg-neo-pink neo-border rounded-full shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hidden lg:block">
+    </div>
+    <div
+      class="absolute top-40 left-[5%] w-12 h-12 bg-neo-teal neo-border-3 rounded-lg transform rotate-12 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hidden lg:block">
+    </div>
+    <div
+      class="absolute bottom-20 left-[40%] w-20 h-8 bg-neo-yellow neo-border-3 rounded-full transform -rotate-12 hidden lg:block">
+    </div>
+
     <!-- About Section -->
-    <section id="about" class="flex text-2xl min-h-screen gap-3">
-      <!-- Text Section -->
-      <div class="basis-2/3 flex flex-col gap-8">
-        <!-- Introduction -->
-        <h2 class="text-5xl">
-          Hello there, <br> My name is
-          <span class="text-primary-yellow font-semibold underline">Dian Saputra.</span>
+    <section id="about"
+      class="grid grid-cols-1 lg:grid-cols-12 gap-y-4 lg:gap-x-10 text-2xl min-h-[85vh] items-center justify-between pb-20 pt-10">
+
+      <!-- Box 1: Headings (Order 1 on mobile, Top Left on desktop) -->
+      <div class="lg:col-span-7 order-1 flex flex-col z-10 w-full mt-10 lg:mt-0 lg:self-end">
+        <p class="font-bold text-xl mb-[-10px]">Hi, my name is Dian.</p>
+        <h2
+          class="text-[54px] md:text-8xl lg:text-[90px] xl:text-[100px] font-black leading-[0.9] uppercase tracking-tighter">
+          I BUILD <br>
+          <span
+            class="bg-primary-yellow px-4 border-[4px] border-black rounded-xl inline-block transform -rotate-2 mt-4 lg:mt-2 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">AWESOME
+            APPS.</span>
         </h2>
-        <!-- Description -->
-        <p class="font-light text-2xl">
+      </div>
+
+      <!-- Box 2: Image Section (Order 2 on mobile, Right column spanning 2 rows on desktop) -->
+      <div class="lg:col-span-5 lg:row-span-2 order-2 flex justify-center w-full relative my-8 lg:my-0 lg:self-center">
+        <div
+          class="relative z-10 w-full max-w-sm bg-white border-[4px] border-black rounded-[32px] overflow-hidden shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] lg:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)]">
+
+          <img src="assets/img/dayxode.png" class="w-full h-auto object-cover" />
+        </div>
+        <div
+          class="absolute bottom-36 right-24 sm:right-16 lg:bottom-36 lg:right-28 bg-neo-teal px-4 md:px-5 py-2 border-[4px] border-black rounded-full font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex items-center gap-2 transform z-20 text-sm">
+          <span class="w-3 h-3 bg-white border-[2px] border-black rounded-full inline-block"></span> Available for
+          Freelance
+        </div>
+      </div>
+
+      <!-- Box 3: Description & Socials (Order 3 on mobile, Bottom Left on desktop) -->
+      <div class="lg:col-span-7 order-3 w-full flex flex-col gap-6 z-10 lg:self-start mt-4 lg:mt-12">
+        <p class="font-medium text-lg lg:text-xl max-w-xl border-l-[4px] border-black pl-4">
           I’m a versatile Software Engineer and UI/UX Designer based in Bandung, Indonesia.
-          <br>My experience in various projects has strengthened my skills in software development and design, preparing
-          me for a tech career.
+          <br><br>My experience in various projects has strengthened my skills in software development and design,
+          preparing me for a tech career.
         </p>
-        <!-- Connect w/ social links -->
-        <div class="flex flex-col gap-3">
-          <p class="text-2xl font-medium">
-            Let's connect with me at:
+        <div class="flex flex-col gap-4 mt-2">
+          <p class="text-xl font-bold uppercase tracking-wider">
+            Let's connect:
           </p>
-          <div class="flex gap-5">
-            <a href="https://g.dev/dayensptr" target="_blank">
-              <img src="assets/icons/Google.svg" alt="" srcset="">
+          <div class="flex flex-wrap gap-4">
+            <a href="https://g.dev/dayensptr" target="_blank"
+              class="w-12 h-12 bg-white neo-border flex items-center justify-center rounded-full hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-transform shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+              <img src="assets/icons/Google.svg" alt="Google" class="w-6 h-6 grayscale hover:grayscale-0">
             </a>
-            <a href="https://github.com/dayeeen" target="_blank">
-              <img src="assets/icons/github.svg" alt="" srcset="">
+            <a href="https://github.com/dayeeen" target="_blank"
+              class="w-12 h-12 bg-white neo-border flex items-center justify-center rounded-full hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-transform shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+              <img src="assets/icons/github.svg" alt="GitHub" class="w-6 h-6 grayscale hover:grayscale-0">
             </a>
-            <a href="https://gitlab.com/dayeeen" target="_blank">
-              <img src="assets/icons/Gitlab.svg" alt="" srcset="">
+            <a href="https://gitlab.com/dayeeen" target="_blank"
+              class="w-12 h-12 bg-white neo-border flex items-center justify-center rounded-full hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-transform shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+              <img src="assets/icons/Gitlab.svg" alt="Gitlab" class="w-6 h-6 grayscale hover:grayscale-0">
             </a>
-            <a href="https://dribbble.com/dayensptr" target="_blank">
-              <img src="assets/icons/dribbble.svg" alt="" srcset="">
+            <a href="https://dribbble.com/dayensptr" target="_blank"
+              class="w-12 h-12 bg-neo-pink neo-border flex items-center justify-center rounded-full hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-transform shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+              <img src="assets/icons/dribbble.svg" alt="Dribbble" class="w-6 h-6 brightness-0 invert">
             </a>
-            <a href="https://www.linkedin.com/in/dayensptr" target="_blank">
-              <img src="assets/icons/Linkedin.svg" alt="" srcset="">
+            <a href="https://www.linkedin.com/in/dayensptr" target="_blank"
+              class="w-12 h-12 bg-neo-blue neo-border flex items-center justify-center rounded-full hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-transform shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+              <img src="assets/icons/Linkedin.svg" alt="LinkedIn" class="w-6 h-6 brightness-0 invert">
             </a>
-            <a href="https://www.instagram.com/dayxode" target="_blank">
-              <img src="assets/icons/Instagram.svg" alt="" srcset="">
-            </a>
+            <a href="https://www.instagram.com/dayxode" target="_blank"
+              class="w-12 h-12 bg-primary-yellow neo-border flex items-center justify-center rounded-full hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-transform shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+              <img src="assets/icons/Instagram.svg" alt="Instagram" class="w-6 h-6 brightness-0">
             </a>
           </div>
         </div>
-      </div>
-      <!-- Image Section -->
-      <div class="basis-0.5 p-5">
-        <img src="assets/img/elneyad.png" alt="">
       </div>
     </section>
 
     <!-- Service Section -->
-    <section id="service" class="flex min-h-screen gap-12">
-      <!-- List projects columns -->
-      <div class="basis-1/2 flex flex-col gap-6">
-        <div class="card lg:card-side shadow-sm hover:shadow-lg transition-all duration-300 border-1">
-          <figure>
-            <img src="assets/img/LEAP.png" alt="" class="aspect-16/9 max-h-[150px] object-cover" />
-          </figure>
-          <div class="card-body justify-center items-center content-center self-center">
-            <h2 class="card-title">UI/UX Design</h2>
-            <p>5 Projects completed</p>
-          </div>
-        </div>
+    <section id="service" class="min-h-screen py-20 px-4 xl:px-0 relative lg:max-w-[90%] mx-auto z-10">
 
-        <div class="card lg:card-side shadow-sm hover:shadow-lg transition-all duration-300 border-1">
-          <figure>
-            <img src="assets/img/LEAP.png" alt="" class="aspect-16/9 max-h-[150px] object-cover" />
-          </figure>
-          <div class="card-body justify-center items-center content-center self-center">
-            <h2 class="card-title">Web Development</h2>
-            <p>12 Projects completed</p>
-          </div>
-        </div>
-
-        <div class="card lg:card-side shadow-sm hover:shadow-lg transition-all duration-300 border-1">
-          <figure>
-            <img src="assets/img/LEAP.png" alt="" class="aspect-16/9 max-h-[150px] object-cover" />
-          </figure>
-          <div class="card-body justify-center items-center content-center self-center">
-            <h2 class="card-title">Mobile Development</h2>
-            <p>3 Projects completed</p>
-          </div>
-        </div>
+      <!-- Decorative background elements -->
+      <div
+        class="absolute -left-8 top-[30%] z-[-1] hidden xl:block w-32 h-16 bg-neo-teal border-[4px] border-black rounded-b-full shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transform -rotate-[30deg]">
+      </div>
+      <div
+        class="absolute -right-8 bottom-[10%] z-[-1] hidden xl:flex w-24 h-24 bg-neo-pink border-[4px] border-black rounded-full shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex-col justify-center items-center overflow-hidden transform rotate-12">
+        <div class="w-full h-[4px] bg-black absolute"></div>
+        <div class="h-full w-[4px] bg-black absolute"></div>
+        <div class="w-[70%] h-[70%] border-[4px] border-black rounded-full absolute bg-transparent"></div>
       </div>
 
-      <!-- Description & Tools -->
-      <div class="basis-1/2 flex flex-col gap-8">
-        <h1 class="text-5xl font-medium">Service</h1>
-        <p class="text-2xl font-light">
-          I have built web and mobile applications, focusing on UI/UX and fullstack development. These projects, from
-          academic to competition-based, have strengthened my skills in design, user research, and software engineering.
-        </p>
-        <h1 class="text-5xl font-medium">Tools</h1>
-        <div class="flex gap-5">
-          <img src="assets/icons/JavaScript.svg" alt="" srcset="">
-          <img src="assets/icons/html.svg" alt="" srcset="">
-          <img src="assets/icons/css.svg" alt="" srcset="">
-          <img src="assets/icons/Figma.svg" alt="" srcset="">
-          <img src="assets/icons/VSCode.svg" alt="" srcset="">
-          <img src="assets/icons/php.svg" alt="" srcset="">
+      <div
+        class="bg-white border-[4px] border-black rounded-[32px] md:rounded-[48px] p-8 md:p-12 lg:p-16 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] md:shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] relative w-full mb-10">
+
+        <div class="text-center mb-16">
+          <h2 class="text-5xl md:text-6xl font-black uppercase tracking-tighter">What can I do for you?</h2>
         </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card 1: UI/UX Design -->
+          <div
+            class="flex flex-col bg-white border-[4px] border-black rounded-2xl p-6 md:p-8 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 hover:-translate-x-1 hover:shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] transition-transform duration-300">
+            <!-- Brutalist Icon -->
+            <div class="w-20 h-20 mb-6 relative">
+              <div
+                class="absolute w-14 h-12 bg-neo-blue border-4 border-black rounded-md top-2 left-2 flex flex-col shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                <div class="flex gap-[2px] p-1 border-b-4 border-black bg-white rounded-t-sm items-center h-4">
+                  <div class="w-[4px] h-[4px] bg-black rounded-full border border-black"></div>
+                  <div class="w-[4px] h-[4px] bg-black rounded-full border border-black"></div>
+                  <div class="w-[4px] h-[4px] border border-black rounded-full"></div>
+                </div>
+                <div class="flex-grow relative bg-neo-blue">
+                  <div class="w-8 h-4 border-2 border-black border-dashed absolute top-2 left-2 bg-white/50"></div>
+                </div>
+              </div>
+            </div>
+            <h3 class="text-2xl font-black uppercase mb-4 tracking-tight">UI/UX Design</h3>
+            <p class="font-medium text-base mb-8 flex-grow text-gray-800">I have designed mobile apps, websites, and
+              dashboards. In my daily work I ideate, create wireframes, lead UX research, plan flows, and deliver hi-fi
+              prototypes.</p>
+            <a href="uiux.html"
+              class="font-black text-lg mt-auto flex items-center hover:text-neo-blue transition-colors w-fit group">
+              See My Work <span class="ml-2 group-hover:translate-x-2 transition-transform">→</span>
+            </a>
+          </div>
+
+          <!-- Card 2: Web Dev -->
+          <div
+            class="flex flex-col bg-white border-[4px] border-black rounded-2xl p-6 md:p-8 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 hover:-translate-x-1 hover:shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] transition-transform duration-300">
+            <!-- Brutalist Icon -->
+            <div class="w-20 h-20 mb-6 relative flex items-center">
+              <div
+                class="w-14 h-14 bg-neo-teal border-4 border-black rounded-full shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex items-center justify-center relative left-2">
+                <div class="w-6 h-6 border-4 border-black rounded-full"></div>
+                <div class="w-[8px] h-[8px] bg-black rounded-full absolute -left-2 top-0"></div>
+                <div class="absolute w-8 h-[4px] bg-black left-[-2px] transform rotate-45"></div>
+              </div>
+            </div>
+            <h3 class="text-2xl font-black uppercase mb-4 tracking-tight">Web Development</h3>
+            <p class="font-medium text-base mb-8 flex-grow text-gray-800">I build responsive and high-performance
+              websites using modern tech stacks like React, Node.js, and CSS grids. My focus is on clean code and
+              pixel-perfect UIs.</p>
+            <a href="webdev.html"
+              class="font-black text-lg mt-auto flex items-center hover:text-neo-teal transition-colors w-fit group">
+              See My Work <span class="ml-2 group-hover:translate-x-2 transition-transform">→</span>
+            </a>
+          </div>
+
+          <!-- Card 3: Mobile Dev -->
+          <div
+            class="flex flex-col bg-white border-[4px] border-black rounded-2xl p-6 md:p-8 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 hover:-translate-x-1 hover:shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] transition-transform duration-300">
+            <!-- Brutalist Icon -->
+            <div class="w-20 h-20 mb-6 relative flex items-center">
+              <div
+                class="w-14 h-14 bg-neo-pink border-4 border-black rounded-full shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex items-center justify-center overflow-hidden relative left-2">
+                <div class="absolute w-full h-[4px] bg-black"></div>
+                <div class="absolute w-[4px] h-full bg-black"></div>
+                <div class="absolute w-[70%] h-[120%] border-[4px] border-black rounded-[100%] bg-transparent"></div>
+              </div>
+            </div>
+            <h3 class="text-2xl font-black uppercase mb-4 tracking-tight">Mobile Dev</h3>
+            <p class="font-medium text-base mb-8 flex-grow text-gray-800">Experience developing scalable cross-platform
+              mobile apps using Flutter and Firebase. Combining smooth interactions, device APIs, and robust
+              architectures.</p>
+            <a href="mobile.html"
+              class="font-black text-lg mt-auto flex items-center hover:text-neo-pink transition-colors w-fit group">
+              See My Work <span class="ml-2 group-hover:translate-x-2 transition-transform">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Tools Block (Integrated inside) -->
+        <div class="mt-16 pt-12 border-t-4 border-black border-dashed flex flex-col items-center relative">
+          <h2 class="text-2xl font-black uppercase mb-8 tracking-tight">My Toolkit</h2>
+          <div class="flex flex-wrap gap-4 md:gap-6 justify-center">
+            <div
+              class="w-14 h-14 md:w-16 md:h-16 bg-white border-[3px] border-black flex items-center justify-center rounded-xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transform -rotate-2 hover:rotate-0 transition-transform">
+              <img src="assets/icons/JavaScript.svg" alt="JS" class="w-8 h-8 md:w-10 md:h-10">
+            </div>
+            <div
+              class="w-14 h-14 md:w-16 md:h-16 bg-white border-[3px] border-black flex items-center justify-center rounded-xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transform rotate-2 hover:rotate-0 transition-transform">
+              <img src="assets/icons/html.svg" alt="HTML" class="w-8 h-8 md:w-10 md:h-10">
+            </div>
+            <div
+              class="w-14 h-14 md:w-16 md:h-16 bg-white border-[3px] border-black flex items-center justify-center rounded-xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transform -rotate-1 hover:rotate-0 transition-transform">
+              <img src="assets/icons/css.svg" alt="CSS" class="w-8 h-8 md:w-10 md:h-10">
+            </div>
+            <div
+              class="w-14 h-14 md:w-16 md:h-16 bg-white border-[3px] border-black flex items-center justify-center rounded-xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transform rotate-3 hover:rotate-0 transition-transform">
+              <img src="assets/icons/Figma.svg" alt="Figma" class="w-8 h-8 md:w-10 md:h-10">
+            </div>
+            <div
+              class="w-14 h-14 md:w-16 md:h-16 bg-white border-[3px] border-black flex items-center justify-center rounded-xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transform -rotate-2 hover:rotate-0 transition-transform">
+              <img src="assets/icons/VSCode.svg" alt="VSCode" class="w-8 h-8 md:w-10 md:h-10">
+            </div>
+            <div
+              class="w-14 h-14 md:w-16 md:h-16 bg-white border-[3px] border-black flex items-center justify-center rounded-xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transform rotate-1 hover:rotate-0 transition-transform">
+              <img src="assets/icons/php.svg" alt="PHP" class="w-8 h-8 md:w-10 md:h-10">
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="project" class="min-h-screen py-16">
-      <div class="justify-center item-center text-center items-center max-w-6xl mx-auto">
-        <h2 class="text-5xl font-medium mb-12">Projects</h2>
-        <!-- name of each tab group should be unique -->
-        <div class="tabs tabs-border justify-center">
-          <input type="radio" name="my_tabs_2" class="tab text-2xl" aria-label="UI/UX" />
-          <div class="tab-content py-10">
-            <div class="carousel w-full max-w-4xl mx-auto">
-              <div id="slide1" class="carousel-item relative w-full">
-                <img src="assets/img/LEAP.png" class="w-full max-h-[600px] object-contain mx-auto" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-2 right-2 top-1/2">
-                  <a href="#slide3" class="btn btn-circle">❮</a>
-                  <a href="#slide2" class="btn btn-circle">❯</a>
-                </div>
+    <section id="project" class="min-h-[85vh] py-16 px-4 lg:px-0">
+      <div class="justify-center item-center text-center items-center max-w-7xl mx-auto">
+        <h2 class="text-5xl md:text-7xl font-black mb-12 uppercase tracking-tighter">Top 5 <span
+            class="bg-neo-pink px-2 neo-border inline-block transform -rotate-2 text-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] mt-2 lg:mt-0">Projects</span>
+        </h2>
+
+        <div
+          class="carousel w-full rounded-xl neo-border overflow-hidden shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] bg-primary-black">
+          <!-- Slide 1 -->
+          <div id="slide1"
+            class="carousel-item w-full bg-primary-yellow p-4 md:p-8 flex flex-col justify-center items-center border-r-4 border-black">
+            <div
+              class="neo-card bg-bg-neo w-full max-w-6xl overflow-hidden flex flex-col lg:flex-row shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] text-left">
+              <div class="w-full lg:w-3/5 border-b-4 lg:border-b-0 lg:border-r-4 border-black bg-white">
+                <img src="assets/img/LEAP.png" alt="LEAP Dashboard"
+                  class="w-full h-[250px] sm:h-[350px] lg:h-[500px] object-cover" />
               </div>
-              <div id="slide2" class="carousel-item relative w-full">
-                <img src="assets/img/Sadarah.png" class="w-full max-h-[600px] object-contain mx-auto" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-2 right-2 top-1/2">
-                  <a href="#slide1" class="btn btn-circle">❮</a>
-                  <a href="#slide3" class="btn btn-circle">❯</a>
+              <div class="w-full lg:w-2/5 p-6 md:p-8 flex flex-col justify-between">
+                <div>
+                  <h3 class="text-3xl md:text-4xl font-black uppercase mb-4 tracking-tight">LEAP Dashboard</h3>
+                  <p class="font-medium text-base md:text-lg mb-6 border-l-4 border-black pl-4">A comprehensive
+                    dashboard for managing academic programs and evaluating performance metrics across multiple
+                    departments with real-time analytics.</p>
+                  <div class="flex flex-wrap gap-2 mb-8 border-t-2 border-black border-dashed pt-4">
+                    <span
+                      class="bg-neo-teal px-3 py-1 font-bold text-xs md:text-sm neo-border-3 rounded-lg shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] text-black">React</span>
+                    <span
+                      class="bg-neo-pink px-3 py-1 font-bold text-xs md:text-sm neo-border-3 rounded-lg shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] text-black">Tailwind
+                      CSS</span>
+                    <span
+                      class="bg-neo-blue px-3 py-1 font-bold text-xs md:text-sm neo-border-3 rounded-lg shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] text-white">Node.js</span>
+                  </div>
                 </div>
-              </div>
-              <div id="slide3" class="carousel-item relative w-full">
-                <img src="assets/img/Porto.png" class="w-full max-h-[600px] object-contain mx-auto" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-2 right-2 top-1/2">
-                  <a href="#slide2" class="btn btn-circle">❮</a>
-                  <a href="#slide1" class="btn btn-circle">❯</a>
+                <div class="flex gap-4 mt-auto">
+                  <a href="#slide3"
+                    class="flex-1 h-14 flex items-center justify-center bg-white neo-border-3 rounded-xl hover:bg-neo-pink transition-colors cursor-pointer text-2xl font-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-y-1 active:shadow-[0px_0px_0px_0px_rgba(0,0,0,1)]">❮</a>
+                  <a href="#slide2"
+                    class="flex-1 h-14 flex items-center justify-center bg-white neo-border-3 rounded-xl hover:bg-neo-teal transition-colors cursor-pointer text-2xl font-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-y-1 active:shadow-[0px_0px_0px_0px_rgba(0,0,0,1)]">❯</a>
                 </div>
               </div>
             </div>
           </div>
-
-          <input type="radio" name="my_tabs_2" class="tab text-2xl" aria-label="Web" checked="checked" />
-          <div class="tab-content border-base-300 bg-base-100 p-10">
-            <p>Web projects content here</p>
+          <!-- Slide 2 -->
+          <div id="slide2"
+            class="carousel-item w-full bg-neo-teal p-4 md:p-8 flex flex-col justify-center items-center border-r-4 border-black">
+            <div
+              class="neo-card bg-bg-neo w-full max-w-6xl overflow-hidden flex flex-col lg:flex-row shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] text-left">
+              <div class="w-full lg:w-3/5 border-b-4 lg:border-b-0 lg:border-r-4 border-black bg-white">
+                <img src="assets/img/Sadarah.png" alt="Sadarah App"
+                  class="w-full h-[250px] sm:h-[350px] lg:h-[500px] object-cover" />
+              </div>
+              <div class="w-full lg:w-2/5 p-6 md:p-8 flex flex-col justify-between">
+                <div>
+                  <h3 class="text-3xl md:text-4xl font-black uppercase mb-4 tracking-tight">Sadarah App</h3>
+                  <p class="font-medium text-base md:text-lg mb-6 border-l-4 border-black pl-4">Mobile application
+                    designed to simplify daily task management, team distribution, and boost productivity for digital
+                    agencies with cloud sync.</p>
+                  <div class="flex flex-wrap gap-2 mb-8 border-t-2 border-black border-dashed pt-4">
+                    <span
+                      class="bg-primary-yellow px-3 py-1 font-bold text-xs md:text-sm neo-border-3 rounded-lg shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] text-black">Flutter</span>
+                    <span
+                      class="bg-neo-purple px-3 py-1 font-bold text-xs md:text-sm neo-border-3 rounded-lg shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] text-white">Firebase</span>
+                    <span
+                      class="bg-white px-3 py-1 font-bold text-xs md:text-sm neo-border-3 rounded-lg shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] text-black">Figma</span>
+                  </div>
+                </div>
+                <div class="flex gap-4 mt-auto">
+                  <a href="#slide1"
+                    class="flex-1 h-14 flex items-center justify-center bg-white neo-border-3 rounded-xl hover:bg-primary-yellow transition-colors cursor-pointer text-2xl font-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-y-1 active:shadow-[0px_0px_0px_0px_rgba(0,0,0,1)]">❮</a>
+                  <a href="#slide3"
+                    class="flex-1 h-14 flex items-center justify-center bg-white neo-border-3 rounded-xl hover:bg-neo-purple transition-colors cursor-pointer text-2xl font-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-y-1 active:shadow-[0px_0px_0px_0px_rgba(0,0,0,1)]">❯</a>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <input type="radio" name="my_tabs_2" class="tab text-2xl" aria-label="Mobile" />
-          <div class="tab-content border-base-300 bg-base-100 p-10">
-            <p>Mobile projects content here</p>
+          <!-- Slide 3 -->
+          <div id="slide3"
+            class="carousel-item w-full bg-neo-purple p-4 md:p-8 flex flex-col justify-center items-center">
+            <div
+              class="neo-card bg-bg-neo w-full max-w-6xl overflow-hidden flex flex-col lg:flex-row shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] text-left">
+              <div class="w-full lg:w-3/5 border-b-4 lg:border-b-0 lg:border-r-4 border-black bg-white">
+                <img src="assets/img/Porto.png" alt="Portfolio V1"
+                  class="w-full h-[250px] sm:h-[350px] lg:h-[500px] object-cover" />
+              </div>
+              <div class="w-full lg:w-2/5 p-6 md:p-8 flex flex-col justify-between">
+                <div>
+                  <h3 class="text-3xl md:text-4xl font-black uppercase mb-4 tracking-tight">Portfolio V1</h3>
+                  <p class="font-medium text-base md:text-lg mb-6 border-l-4 border-black pl-4">The initial iteration of
+                    my personal portfolio website showcasing UI/UX case studies and web projects. Built entirely from
+                    scratch.</p>
+                  <div class="flex flex-wrap gap-2 mb-8 border-t-2 border-black border-dashed pt-4">
+                    <span
+                      class="bg-white px-3 py-1 font-bold text-xs md:text-sm neo-border-3 rounded-lg shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] text-black">HTML5</span>
+                    <span
+                      class="bg-white px-3 py-1 font-bold text-xs md:text-sm neo-border-3 rounded-lg shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] text-black">CSS3</span>
+                    <span
+                      class="bg-primary-yellow px-3 py-1 font-bold text-xs md:text-sm neo-border-3 rounded-lg shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] text-black">Vanilla
+                      JS</span>
+                  </div>
+                </div>
+                <div class="flex gap-4 mt-auto">
+                  <a href="#slide2"
+                    class="flex-1 h-14 flex items-center justify-center bg-white neo-border-3 rounded-xl hover:bg-neo-teal transition-colors cursor-pointer text-2xl font-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-y-1 active:shadow-[0px_0px_0px_0px_rgba(0,0,0,1)]">❮</a>
+                  <a href="#slide1"
+                    class="flex-1 h-14 flex items-center justify-center bg-white neo-border-3 rounded-xl hover:bg-primary-yellow transition-colors cursor-pointer text-2xl font-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-y-1 active:shadow-[0px_0px_0px_0px_rgba(0,0,0,1)]">❯</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="min-h-screen text-center">
-      <h2 class="text-5xl font-medium mb-5">Get in touch</h2>
-      <div class="flex flex-col mb-5 items-center gap-5">
-        <input type="text" placeholder="Name" class="input bg-primary-black rounded-lg h-[54px] w-xl" />
-        <label class="input validator bg-primary-black rounded-lg h-[54px] w-xl">
-          <input type="email" placeholder="Email" required />
-        </label>
-        <div class="validator-hint hidden">Enter valid email address</div>
-        <textarea class="textarea input bg-primary-black rounded-lg h-[185px] w-xl" placeholder="Message"></textarea>
+    <section id="contact" class="min-h-[70vh] flex flex-col items-center justify-center text-center py-20 relative">
+      <div
+        class="absolute top-[10%] left-[10%] w-24 h-24 bg-primary-yellow rounded-full neo-border shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hidden lg:block">
       </div>
-      <button class="btn rounded-xl bg-primary-white text-black font-bold w-xl h-[54]">Send</button>
+      <div
+        class="absolute bottom-[20%] right-[10%] w-16 h-16 bg-neo-pink transform rotate-45 neo-border shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hidden lg:block">
+      </div>
+
+      <h2 class="text-6xl md:text-7xl font-black mb-8 uppercase tracking-tighter">Get in <span
+          class="bg-neo-blue px-2 neo-border inline-block transform rotate-2 text-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">Touch</span>
+      </h2>
+      <div
+        class="flex flex-col mb-8 items-center gap-6 w-full max-w-2xl bg-white p-8 neo-border shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] rounded-2xl transform -rotate-1 relative z-10">
+        <input type="text" placeholder="Name"
+          class="w-full neo-border-3 rounded-xl h-[60px] px-4 font-bold text-lg focus:outline-none focus:ring-4 focus:ring-primary-yellow bg-bg-neo shadow-[inset_2px_2px_0px_0px_rgba(0,0,0,0.1)]" />
+        <label class="w-full relative">
+          <input type="email" placeholder="Email"
+            class="w-full neo-border-3 rounded-xl h-[60px] px-4 font-bold text-lg focus:outline-none focus:ring-4 focus:ring-neo-pink bg-bg-neo shadow-[inset_2px_2px_0px_0px_rgba(0,0,0,0.1)]"
+            required />
+        </label>
+        <div class="validator-hint hidden text-red-600 font-bold">Enter valid email address</div>
+        <textarea
+          class="w-full neo-border-3 rounded-xl h-[200px] p-4 font-bold text-lg focus:outline-none focus:ring-4 focus:ring-neo-teal bg-bg-neo resize-none shadow-[inset_2px_2px_0px_0px_rgba(0,0,0,0.1)]"
+          placeholder="Message"></textarea>
+        <button
+          class="neo-btn bg-neo-purple text-white w-full py-4 text-2xl uppercase tracking-widest hover:bg-black transition-colors">Send</button>
+      </div>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer class="p-10">
-    <p class="text-xl text-center justify-center">&copy; 2025 Dian Saputra</p>
+  <footer class="p-10 border-t-4 border-black bg-primary-yellow">
+    <p class="text-2xl font-black text-center justify-center uppercase tracking-wider">&copy; 2026 Dian Saputra.</p>
   </footer>
 </body>
 
